@@ -11,6 +11,7 @@ export function justify(
 	side: "left" | "right" = "left"
 ): string {
 	if (str.length >= width) return str;
+
 	const missingLength = width - str.length;
 
 	let toFit = fillChar.repeat(missingLength).substr(0, missingLength);
