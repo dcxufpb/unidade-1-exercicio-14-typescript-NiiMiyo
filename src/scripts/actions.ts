@@ -13,9 +13,6 @@ export function justify(
 	if (str.length >= width) return str;
 	const missingLength = width - str.length;
 
-	// if (missingLength <= 0)
-	// 	return "VAI DA O CU MANO" + missingLength.toString();
-
 	let toFit = fillChar.repeat(missingLength).substr(0, missingLength);
 
 	if (side == "right") return toFit + str;
